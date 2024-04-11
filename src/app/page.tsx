@@ -9,6 +9,8 @@ export default function Home() {
     fetchStats().then((data: any) => setStats(data));
   }, []);
 
+  console.log(stats);
+
   // render stats
   if (stats) {
     return (
